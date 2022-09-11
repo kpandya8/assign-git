@@ -1,6 +1,20 @@
 #Answers to the questionns in Git assignment.
 
 Q1]  What is a gitignore file and what should it include for a Java project? 
+
+-> A gitignore file specifies the formats fof files that should not be committed to the repository. For instance, the pattern ".project" can be used to to exclude exclude the whole project directory in order to exclude all files under the project directory.
+
+For a java project, patterns that are to be excluded can include files with extensions like ".jar", ".zip", ".tar.gz", and ".log" extension. Other  temporary files that may can be ignored include context files (.ctxt) and temporary files (.tmp).
+
 Q2]  What does fast-forward in git mean? 
+
+-> Fast-forward merges literally move your main branch's tip forward to the end of your feature branch. This keeps all commits created in your feature branch sequential while integrating it neatly back into your main branch. When a head pointer is "fast-forwarded" in git, it means it is moved from its previous location to a direct descendent in a linear history. Merge-conflicts may occur if this is not achievable, for example, in the case of a non-linear history.
+
 Q3]  Why should you have different branches? 
+
+-> Typically, the master branch reflects the project's latest working/complete version. The concept behind having various branches is that for active development, branches create another line of development that is entirely different or isolated from the main stable master branch. There are many advantages to doing so. A new branch is generated for each feature being worked on by different entities. The feature is merged to a common branch when it has been implemented and verified. This can be the master branch, but it can also be a development branch used for testing. Once the demo is successful and no further iterations are required, the master branch is merged to the master branch, indicating a version release or a Tag.
+
+
 Q4]  In a project how many remote Git repositories do you usually have? 
+
+-> We can have as many remotes as we want, but by default we can only have one remote named "origin". The remote called "origin" is not special in any way, except that it is the default remote created by Git when you clone an existing repository.  A git repository typically has a single named remote repository that points to a hosted version of the code i.e the origin. You can configure a second remote that has two variants, one for push and one for fetch. 
