@@ -2,9 +2,9 @@
 
 Q1]  What is a gitignore file and what should it include for a Java project? 
 
--> A gitignore file specifies the formats fof files that should not be committed to the repository. For instance, the pattern ".project" can be used to to exclude exclude the whole project directory in order to exclude all files under the project directory.
+-> A gitignore file specifies the formats of files that should not be committed to the repository. For instance, the pattern ".project" can be used to exclude the whole project directory in order to exclude all files under the project directory.
 
-For a java project, patterns that are to be excluded can include files with extensions like ".jar", ".zip", ".tar.gz", and ".log" extension. Other  temporary files that may can be ignored include context files (.ctxt) and temporary files (.tmp).
+For a java project, patterns that are to be excluded can include files with extensions like ".jar", ".zip", ".tar.gz", and ".log" extension. Other  temporary files that can be ignored include context files (.ctxt) and temporary files (.tmp).
 
 Q2]  What does fast-forward in git mean? 
 
